@@ -10,6 +10,7 @@ hover : #F44336
 * {
   font-family: "Roboto", sans-serif;
   background-color: #a3a3a3;
+  color: #f7f7f7;
 }
 
 #hero {
@@ -20,13 +21,13 @@ hover : #F44336
   font-family: sans-serif;
   background: linear-gradient(
     90deg,
-    #f7f7f7 0%,
+    #a3a3a3 0%,
     #fbc02d 10%,
     #8c1818 30%,
     #6d1212 50%,
     #8c1818 70%,
     #fbc02d 90%,
-    #f7f7f7 100%
+    #a3a3a3 100%
   );
 }
 
@@ -34,11 +35,19 @@ hover : #F44336
   font-size: 50px;
   font-family: "Orbitron", sans-serif;
   color: #ffffff;
+  background-color: transparent;
+}
+
+#hero div {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
 }
 
 #hero p {
   font-size: 20px;
   color: #ffffff;
+  background-color: transparent;
 }
 
 #about {
@@ -70,6 +79,7 @@ hover : #F44336
   border: 1px solid #8c1818;
   padding: 10px 20px;
   border-radius: 10px;
+  color: black;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -78,7 +88,7 @@ hover : #F44336
   background-color: #8c1818;
   color: #ffffff;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
+  transform: scale(1.2);
   cursor: pointer;
 }
 
@@ -92,5 +102,12 @@ hover : #F44336
 
 #timeline h2 {
   font-size: 30px;
+  color: #f7f7f7;
+}
+
+#timeline ul {
+  list-style: none;
+  gap: 20px;
+  font-size: 25px;
   color: #f7f7f7;
 }
