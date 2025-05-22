@@ -19,7 +19,7 @@ hover : #F44336
   align-items: center;
   padding: 20px 150px;
   font-family: sans-serif;
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     #a3a3a3 0%,
     #fbc02d 10%,
@@ -28,13 +28,12 @@ hover : #F44336
     #8c1818 70%,
     #fbc02d 90%,
     #a3a3a3 100%
-  );
+  ); */
 }
 
 #hero h1 {
   font-size: 50px;
   font-family: "Orbitron", sans-serif;
-  color: #ffffff;
   background-color: transparent;
 }
 
@@ -60,19 +59,18 @@ hover : #F44336
 
 #about h2 {
   font-size: 30px;
-  color: #f7f7f7;
 }
 
 #about p {
   font-size: 16px;
-  color: #f7f7f7;
 }
 
 #about ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  font-size: 25px;
+  font-size: 15px;
+  width: 100%;
 }
 
 #about li {
@@ -107,9 +105,13 @@ hover : #F44336
 
 #timeline ul {
   list-style: none;
-  gap: 20px;
   font-size: 25px;
   color: #f7f7f7;
+}
+
+#timeline li {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 #gallery {
@@ -147,6 +149,15 @@ hover : #F44336
   justify-content: space-between;
   padding: 20px 150px;
   color: #f7f7f7;
+}
+
+#legacy h2 {
+  font-size: 30px;
+}
+
+#legacy p {
+  font-size: 16px;
+  text-align: center;
 }
 
 #legacy button {
@@ -193,4 +204,14 @@ hover : #F44336
   justify-content: space-between;
   padding: 0px 150px;
   font-size: 12px;
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+.about-text {
+  width: 50%;
 }
