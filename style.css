@@ -7,6 +7,17 @@ text color : #FFFFFF
 hover : #F44336
 } */
 
+/* background: linear-gradient(
+    90deg,
+    #a3a3a3 0%,
+    #fbc02d 10%,
+    #8c1818 30%,
+    #6d1212 50%,
+    #8c1818 70%,
+    #fbc02d 90%,
+    #a3a3a3 100%
+  ); */
+
 * {
   font-family: "Roboto", sans-serif;
   background-color: #a3a3a3;
@@ -19,16 +30,6 @@ hover : #F44336
   align-items: center;
   padding: 20px 150px;
   font-family: sans-serif;
-  /* background: linear-gradient(
-    90deg,
-    #a3a3a3 0%,
-    #fbc02d 10%,
-    #8c1818 30%,
-    #6d1212 50%,
-    #8c1818 70%,
-    #fbc02d 90%,
-    #a3a3a3 100%
-  ); */
 }
 
 #hero h1 {
@@ -88,6 +89,13 @@ hover : #F44336
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
   transform: scale(1.2);
   cursor: pointer;
+}
+
+#early-life {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 150px;
 }
 
 #timeline {
