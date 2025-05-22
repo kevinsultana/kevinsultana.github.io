@@ -111,3 +111,86 @@ hover : #F44336
   font-size: 25px;
   color: #f7f7f7;
 }
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 150px;
+  gap: 20px;
+  color: #f7f7f7;
+}
+
+#gallery h2 {
+  font-size: 30px;
+}
+
+#portofolio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 150px;
+  gap: 20px;
+  color: #f7f7f7;
+}
+
+#portofolio h2 {
+  font-size: 30px;
+}
+
+#legacy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 150px;
+  color: #f7f7f7;
+}
+
+#legacy button {
+  border: 1px solid #8c1818;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#legacy button:hover {
+  background-color: #8c1818;
+  color: #ffffff;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#legacy ul {
+  list-style: none;
+  font-size: 18px;
+}
+
+#legacy li {
+  margin-bottom: 10px;
+}
+
+#legacy a {
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#legacy a:hover {
+  font-size: 18px;
+  color: #8c1818;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 150px;
+  font-size: 12px;
+}
