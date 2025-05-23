@@ -20,48 +20,86 @@ hover : #F44336
 
 * {
   font-family: "Roboto", sans-serif;
-  background-color: #a3a3a3;
+  background-color: black;
   color: #f7f7f7;
 }
 
 #header {
   display: flex;
   width: 80%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 5px 150px;
+  padding: 0px 150px;
   position: fixed;
+  gap: 30px;
+  background: linear-gradient(
+    to right,
+    #fbc02d,
+    #b71c1c,
+    #b71c1c,
+    #b71c1c,
+    #fbc02d
+  );
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+
+.logo-text h3 {
+  font-size: 20px;
+  font-family: "Orbitron", sans-serif;
+  background-color: #b71c1c;
+  margin: 0;
+}
+
+#navbar {
+  background-color: transparent;
 }
 
 #navbar ul {
   display: flex;
   gap: 20px;
   list-style: none;
+  background-color: transparent;
+}
+
+#navbar li {
+  background-color: transparent;
 }
 
 #navbar a {
   text-decoration: none;
   font-size: 16px;
   transition: all 0.3s ease-in-out;
+  background-color: transparent;
 }
 
 #navbar a:hover {
-  color: #f44336;
+  color: rgb(75, 33, 33);
   font-size: 20px;
+  background-color: transparent;
 }
 
 .navbar-img {
   width: 50px;
   height: 50px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 #hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 150px;
+  padding: 100px 150px 50px 150px;
   font-family: sans-serif;
+}
+
+#hero img {
+  object-fit: cover;
 }
 
 #hero h1 {
@@ -110,7 +148,6 @@ hover : #F44336
   border: 1px solid #8c1818;
   padding: 10px 20px;
   border-radius: 10px;
-  color: black;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -204,7 +241,6 @@ hover : #F44336
   border: 1px solid #8c1818;
   padding: 10px 20px;
   border-radius: 10px;
-  color: black;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -247,9 +283,9 @@ hover : #F44336
 }
 
 .about-img {
-  display: flex;
-  justify-content: center;
-  width: 500px;
+  width: 600px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .about-text {
