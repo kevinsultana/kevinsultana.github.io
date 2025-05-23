@@ -22,6 +22,8 @@ hover : #F44336
   font-family: "Roboto", sans-serif;
   background-color: black;
   color: #f7f7f7;
+  margin: 0;
+  padding: 0;
 }
 
 #header {
@@ -160,11 +162,37 @@ hover : #F44336
   cursor: pointer;
 }
 
+.about-img {
+  width: 600px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.about-text {
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #early-life {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px 150px;
+}
+
+#early-life h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+#early-life p {
+  font-size: 18px;
+  text-align: center;
+  padding: 0px 200px;
+  margin-bottom: 40px;
 }
 
 #timeline {
@@ -186,11 +214,31 @@ hover : #F44336
   color: #f7f7f7;
 }
 
+/* .timeline-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-tile img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out;
+} */
+
 #timeline li {
   display: flex;
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+#timeline li:hover {
+  transform: scale(1.2);
 }
 
 #timeline img {
@@ -203,11 +251,10 @@ hover : #F44336
 }
 
 #timeline img:hover {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
+  transform: scale(4.5);
+  object-fit: cover;
   border-radius: 10px;
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 #gallery {
@@ -222,6 +269,7 @@ hover : #F44336
 #gallery h2 {
   font-size: 30px;
   text-align: center;
+  margin: 30px 0px;
 }
 
 .photo-container {
@@ -247,6 +295,14 @@ hover : #F44336
   height: 300px;
   object-fit: cover;
   border-radius: 20px;
+  border: 1px solid #8c1818;
+  transition: all 0.3s ease-in-out;
+}
+
+#gallery img:hover {
+  transform: scale(1.4);
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 #portofolio {
@@ -255,7 +311,7 @@ hover : #F44336
   align-items: center;
   justify-content: space-between;
   padding: 20px 150px;
-  gap: 20px;
+  gap: 120px;
   color: #f7f7f7;
 }
 
@@ -324,14 +380,4 @@ hover : #F44336
   justify-content: space-between;
   padding: 0px 150px;
   font-size: 12px;
-}
-
-.about-img {
-  width: 600px;
-  object-fit: cover;
-  border-radius: 20px;
-}
-
-.about-text {
-  width: 50%;
 }
