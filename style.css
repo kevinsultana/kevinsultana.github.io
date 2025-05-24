@@ -321,17 +321,23 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 20px 150px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px 50px;
+  }
 }
 
 #timeline h2 {
   font-size: 30px;
   color: var(--text-color);
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 
-#timeline ul {
+#timeline div {
   list-style: none;
-  font-size: 25px;
-  color: var(--text-color);
 }
 
 #timeline li {
@@ -340,10 +346,19 @@ section {
   margin-bottom: 10px;
   align-items: center;
   transition: all 0.3s ease-in-out;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: none;
+  }
 }
 
 #timeline li:hover {
   transform: scale(1.2);
+  @media screen and (max-width: 768px) {
+    transform: none;
+  }
 }
 
 #timeline img {
@@ -353,6 +368,12 @@ section {
   border-radius: 5px;
   margin-right: 20px;
   transition: all 0.3s ease-in-out;
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    height: 100px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
 }
 
 #timeline img:hover {
@@ -360,6 +381,9 @@ section {
   object-fit: cover;
   border-radius: 10px;
   margin-right: 20px;
+  @media screen and (max-width: 768px) {
+    transform: scale(2);
+  }
 }
 
 #gallery {
@@ -369,12 +393,21 @@ section {
   justify-content: space-between;
   padding: 20px 150px;
   gap: 20px;
+
+  @media screen and (max-width: 768px) {
+    padding: 20px 20px;
+  }
 }
 
 #gallery h2 {
   font-size: 30px;
   text-align: center;
   margin: 30px 0px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    margin: 0;
+  }
 }
 
 .photo-container {
@@ -385,6 +418,11 @@ section {
   justify-content: space-between;
   gap: 50px;
   margin-top: 60px;
+
+  @media screen and (max-width: 768px) {
+    gap: 20px;
+    justify-content: center;
+  }
 }
 
 .photo-costume {
@@ -402,12 +440,19 @@ section {
   border-radius: 20px;
   border: 1px solid var(--primary-color);
   transition: all 0.3s ease-in-out;
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    height: 150px;
+  }
 }
 
 #gallery img:hover {
   transform: scale(1.4);
   object-fit: cover;
   border-radius: 20px;
+  @media screen and (max-width: 768px) {
+    transform: scale(1.5);
+  }
 }
 
 #portofolio {
@@ -418,22 +463,40 @@ section {
   padding: 20px 150px;
   gap: 120px;
   color: var(--text-color);
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px 50px;
+    gap: 20px;
+  }
 }
 
 #portofolio h2 {
   font-size: 30px;
   width: 250px;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 #portofolio ul {
   list-style-type: disc;
   padding-left: 20px;
+  @media screen and (max-width: 768px) {
+    padding-left: 0;
+    margin-top: 10px;
+  }
 }
 
 #portofolio li {
   font-size: 18px;
   margin-bottom: 16px;
   line-height: 1.6;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 #legacy {
@@ -443,15 +506,24 @@ section {
   justify-content: space-between;
   padding: 20px 150px;
   color: var(--text-color);
+  @media screen and (max-width: 768px) {
+    padding: 20px 50px;
+  }
 }
 
 #legacy h2 {
   font-size: 30px;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 #legacy p {
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 #legacy button {
@@ -462,6 +534,10 @@ section {
   cursor: pointer;
   background-color: transparent;
   color: var(--text-color);
+  margin: 20px 0px;
+  @media screen and (max-width: 768px) {
+    margin: 10px 0px;
+  }
 }
 
 #legacy button:hover {
@@ -509,9 +585,12 @@ section {
 
 #footer {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 40px 150px;
+  justify-content: center;
+  padding: 20px 150px;
   font-size: 12px;
+  background-color: var(--primary-color);
+  @media screen and (max-width: 768px) {
+    padding: 10px 50px;
+  }
 }
