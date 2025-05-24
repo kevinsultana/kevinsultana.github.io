@@ -58,7 +58,7 @@ section {
   background: transparent;
 }
 
-#navbar ul {
+#navbar div {
   display: flex;
   gap: 20px;
   list-style: none;
