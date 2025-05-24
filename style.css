@@ -15,6 +15,14 @@ body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
 #header {
   display: flex;
   width: 80%;
@@ -72,6 +80,7 @@ body {
 #navbar a:hover {
   background-color: var(--hover-color);
   transform: scale(1.2);
+  border-radius: 20px;
 }
 
 .navbar-img {
@@ -276,7 +285,7 @@ body {
 #portofolio {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 20px 150px;
   gap: 120px;
@@ -285,6 +294,18 @@ body {
 
 #portofolio h2 {
   font-size: 30px;
+  width: 250px;
+}
+
+#portofolio ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#portofolio li {
+  font-size: 18px;
+  margin-bottom: 16px;
+  line-height: 1.6;
 }
 
 #legacy {
