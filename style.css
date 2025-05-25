@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0;
@@ -25,10 +25,9 @@ section {
 
 #header {
   display: flex;
-  width: 80%;
+  width: 100vw;
   justify-content: center;
   align-items: center;
-  padding: 0px 150px;
   position: fixed;
   gap: 30px;
   background: linear-gradient(
@@ -40,7 +39,12 @@ section {
   );
 
   @media screen and (max-width: 768px) {
-    padding: 0px 40px;
+    padding: 0px 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 0px 0px;
+    gap: 10px;
   }
 }
 
@@ -81,7 +85,7 @@ section {
     text-decoration: none;
     color: var(--text-color);
     transition: all 0.3s ease-in-out;
-    font-size: medium;
+    font-size: 16px;
     padding: 5px 10px;
     border-radius: 10px;
   }
@@ -130,6 +134,10 @@ section {
   gap: 20px;
   list-style: none;
   background-color: transparent;
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    gap: 5px;
+  }
 }
 
 #navbar li {
@@ -142,11 +150,14 @@ section {
   transition: all 0.3s ease-in-out;
   color: var(--text-color);
   padding: 5px 10px;
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 14px;
+  }
 }
 
 #navbar a:hover {
   background-color: var(--hover-color);
-  transform: scale(1.2);
   border-radius: 20px;
 }
 
@@ -168,15 +179,26 @@ section {
     gap: 20px;
     padding: 50px 10px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 60px 30px;
+  }
 }
 
 #hero img {
   object-fit: cover;
+
   @media screen and (max-width: 768px) {
     width: 400px;
     height: 230px;
     object-fit: contain;
     margin-left: 40px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 380px;
+    height: 300px;
+    object-fit: contain;
   }
 }
 
@@ -186,6 +208,10 @@ section {
   @media screen and (max-width: 768px) {
     text-align: center;
     margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 40px;
   }
 }
 
@@ -198,6 +224,10 @@ section {
   font-size: 20px;
   @media screen and (max-width: 768px) {
     text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 16px;
   }
 }
 
@@ -212,12 +242,21 @@ section {
     gap: 20px;
     padding: 20px 50px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 20px 30px;
+    flex-direction: column;
+  }
 }
 
 #about h2 {
   font-size: 30px;
   @media screen and (max-width: 768px) {
     font-size: 24px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 26px;
   }
 }
 
@@ -233,6 +272,10 @@ section {
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: row;
   }
 }
 
@@ -282,6 +325,12 @@ section {
     height: auto;
     text-align: center;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
 }
 
 #early-life {
@@ -293,14 +342,23 @@ section {
   @media screen and (max-width: 768px) {
     padding: 20px 50px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 20px 30px;
+  }
 }
 
 #early-life h2 {
   font-size: 30px;
   margin-bottom: 40px;
+
   @media screen and (max-width: 768px) {
     font-size: 24px;
     margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 26px;
   }
 }
 
@@ -309,9 +367,14 @@ section {
   text-align: center;
   padding: 0px 200px;
   margin-bottom: 40px;
+
   @media screen and (max-width: 768px) {
     padding: 0px;
     font-size: 16px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 0px;
   }
 }
 
@@ -326,13 +389,23 @@ section {
     flex-direction: column;
     padding: 20px 50px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: column;
+    padding: 20px 80px;
+  }
 }
 
 #timeline h2 {
   font-size: 30px;
   color: var(--text-color);
+
   @media screen and (max-width: 768px) {
     font-size: 24px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 26px;
   }
 }
 
@@ -346,7 +419,15 @@ section {
   margin-bottom: 10px;
   align-items: center;
   transition: all 0.3s ease-in-out;
+
   @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     flex-direction: column;
     margin-bottom: 20px;
     text-align: center;
@@ -356,7 +437,12 @@ section {
 
 #timeline li:hover {
   transform: scale(1.2);
+
   @media screen and (max-width: 768px) {
+    transform: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     transform: none;
   }
 }
@@ -368,9 +454,17 @@ section {
   border-radius: 5px;
   margin-right: 20px;
   transition: all 0.3s ease-in-out;
+
   @media screen and (max-width: 768px) {
     width: 100px;
     height: 100px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 200px;
+    height: 200px;
     margin-right: 0px;
     margin-bottom: 20px;
   }
@@ -381,8 +475,13 @@ section {
   object-fit: cover;
   border-radius: 10px;
   margin-right: 20px;
+
   @media screen and (max-width: 768px) {
     transform: scale(2);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    transform: scale(1.2);
   }
 }
 
@@ -397,6 +496,10 @@ section {
   @media screen and (max-width: 768px) {
     padding: 20px 20px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 20px 30px;
+  }
 }
 
 #gallery h2 {
@@ -406,6 +509,11 @@ section {
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 26px;
     margin: 0;
   }
 }
@@ -422,6 +530,12 @@ section {
   @media screen and (max-width: 768px) {
     gap: 20px;
     justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
   }
 }
 
@@ -440,9 +554,15 @@ section {
   border-radius: 20px;
   border: 1px solid var(--primary-color);
   transition: all 0.3s ease-in-out;
+
   @media screen and (max-width: 768px) {
     width: 100px;
     height: 150px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 200px;
+    height: 250px;
   }
 }
 
@@ -450,8 +570,13 @@ section {
   transform: scale(1.4);
   object-fit: cover;
   border-radius: 20px;
+
   @media screen and (max-width: 768px) {
     transform: scale(1.5);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    transform: scale(1.3);
   }
 }
 
@@ -526,26 +651,6 @@ section {
   }
 }
 
-#legacy button {
-  border: 1px solid var(--primary-color);
-  padding: 10px 20px;
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  background-color: transparent;
-  color: var(--text-color);
-  margin: 20px 0px;
-  @media screen and (max-width: 768px) {
-    margin: 10px 0px;
-  }
-}
-
-#legacy button:hover {
-  background-color: var(--primary-color);
-  box-shadow: 0 0 40px 5px var(--hover-color);
-  cursor: pointer;
-}
-
 #legacy ul {
   list-style: none;
   font-size: 18px;
@@ -555,15 +660,25 @@ section {
   margin-bottom: 10px;
 }
 
-#legacy a {
-  font-size: 16px;
-  text-decoration: none;
+.button-learn-more {
+  border: 1px solid var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--text-color);
+  margin: 20px 0px;
+  text-decoration: none;
+  @media screen and (max-width: 768px) {
+    margin: 10px 0px;
+  }
 }
 
-#legacy a:hover {
-  font-size: 18px;
-  color: var(--secondary-color);
+.button-learn-more:hover {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 40px 5px var(--hover-color);
+  cursor: pointer;
 }
 
 .social-icons {
@@ -574,8 +689,11 @@ section {
 
 .social-icons a {
   color: var(--text-color);
-  font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.social-icons i {
+  font-size: 24px;
 }
 
 .social-icons a:hover {
@@ -587,10 +705,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 150px;
+  padding: 10px 150px;
   font-size: 12px;
   background-color: var(--primary-color);
   @media screen and (max-width: 768px) {
-    padding: 10px 50px;
+    padding: 5px 50px;
   }
 }
