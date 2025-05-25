@@ -523,7 +523,6 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
   gap: 50px;
   margin-top: 60px;
 
@@ -594,13 +593,26 @@ section {
     padding: 20px 50px;
     gap: 20px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: column;
+    padding: 20px 80px;
+    gap: 20px;
+  }
 }
 
 #portofolio h2 {
   font-size: 30px;
   width: 250px;
+
   @media screen and (max-width: 768px) {
     font-size: 24px;
+    width: 100%;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 26px;
     width: 100%;
     text-align: center;
   }
@@ -609,9 +621,13 @@ section {
 #portofolio ul {
   list-style-type: disc;
   padding-left: 20px;
+
   @media screen and (max-width: 768px) {
     padding-left: 0;
-    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding-left: 0;
   }
 }
 
@@ -619,8 +635,13 @@ section {
   font-size: 18px;
   margin-bottom: 16px;
   line-height: 1.6;
+
   @media screen and (max-width: 768px) {
     font-size: 16px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 18px;
   }
 }
 
@@ -631,23 +652,38 @@ section {
   justify-content: space-between;
   padding: 20px 150px;
   color: var(--text-color);
+
   @media screen and (max-width: 768px) {
     padding: 20px 50px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 20px 80px;
   }
 }
 
 #legacy h2 {
   font-size: 30px;
+
   @media screen and (max-width: 768px) {
     font-size: 24px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 26px;
   }
 }
 
 #legacy p {
   font-size: 18px;
   text-align: center;
+
   @media screen and (max-width: 768px) {
     font-size: 16px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 18px;
   }
 }
 
@@ -708,7 +744,12 @@ section {
   padding: 10px 150px;
   font-size: 12px;
   background-color: var(--primary-color);
+
   @media screen and (max-width: 768px) {
     padding: 5px 50px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 5px 80px;
   }
 }
